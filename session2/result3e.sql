@@ -1,0 +1,1 @@
+SELECT p.name, m.year FROM Directs d,Person p, Genre g WHERE p.pid = d.pid AND d.mid = g.mid AND g.genre = "Action" COUNT(m.mid) >= 2;
